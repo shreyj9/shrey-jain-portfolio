@@ -7,6 +7,11 @@ export const profile = {
   github: "https://github.com/shreyj9",
   linkedin: "https://www.linkedin.com/in/shrey-jain0/",
   email: "jshrey244@gmail.com",
+  stats: [
+    { value: "4", label: "backend projects shipped" },
+    { value: "10,000", label: "GAN candidates generated" },
+    { value: "0.986", label: "R² on gain / directivity" },
+  ],
 };
 
 export type Project = {
@@ -62,7 +67,7 @@ export const projects: Project[] = [
     ],
     tags: ["Next.js", "Firebase Auth", "Firestore"],
     featured: false,
-    href: "https://github.com/shreyj9/truckops-expense-tracker",
+    href: "https://github.com/shreyjain9/truckops-expense-tracker",
   },
   {
     title: "GAN-Based Antenna Topology Synthesis",

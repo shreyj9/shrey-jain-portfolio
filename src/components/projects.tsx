@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 function ProjectCard({ project }: { project: Project }) {
   const { featured } = project;
   return (
-    <div className="relative h-full overflow-hidden rounded-xl border border-border bg-zinc-900/40">
+    <div className="relative h-full overflow-hidden rounded-xl border border-border bg-zinc-900/40 transition-all duration-300 hover:-translate-y-0.5 hover:border-white/15">
       <MagicCard
         className="h-full rounded-xl"
         gradientColor="#10b98120"

@@ -19,8 +19,13 @@ export default function Home() {
         <About />
         <Contact />
       </main>
-      <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted">
-        © {new Date().getFullYear()} {profile.name}
+      <footer className="border-t border-border py-8">
+        <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-2 px-5 font-mono text-xs text-muted sm:flex-row sm:px-8">
+          <p>
+            © {new Date().getFullYear()} {profile.name}
+          </p>
+          <p>Built with Next.js, Tailwind CSS &amp; Magic UI</p>
+        </div>
       </footer>
     </>
   );

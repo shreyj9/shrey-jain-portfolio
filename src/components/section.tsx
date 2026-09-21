@@ -22,14 +22,23 @@ export function Section({
     <section id={id} className={cn("relative py-20 sm:py-28", className)}>
       <div className="mx-auto w-full max-w-5xl px-5 sm:px-8">
         <BlurFade inView>
-          <p
-            className={cn(
-              "font-mono text-xs uppercase tracking-[0.2em]",
-              tone === "research" ? "text-research" : "text-accent",
-            )}
-          >
-            {index} / {title}
-          </p>
+          <div className="flex items-center gap-4">
+            <p
+              className={cn(
+                "shrink-0 font-mono text-xs uppercase tracking-[0.2em]",
+                tone === "research" ? "text-research" : "text-accent",
+              )}
+            >
+              {index} / {title}
+            </p>
+            <span
+              aria-hidden="true"
+              className={cn(
+                "h-px flex-1",
+                tone === "research" ? "bg-research/15" : "bg-border",
+              )}
+            />
+          </div>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
             {description ?? title}
           </h2>
