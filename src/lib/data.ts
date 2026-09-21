@@ -151,6 +151,12 @@ export const about = {
     graduation: "Expected May 2028",
     focus: "Intelligence and Modeling/Simulation",
   },
+  organizations: [
+    { name: "HyTech Racing", detail: "Formula SAE electric racing" },
+    { name: "VIP: Automated Algorithm Design", detail: "Vertically Integrated Projects" },
+    { name: "Delta Theta Tau" },
+    { name: "GT Ramblin' Raas", detail: "Garba-Raas dance team" },
+  ],
   skills: [
     {
       label: "Languages",
