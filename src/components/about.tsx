@@ -22,11 +22,9 @@ export function About() {
               <p className="font-mono text-xs uppercase tracking-wider text-accent">
                 Education
               </p>
-
               <p className="mt-3 font-medium">{education.school}</p>
               <p className="mt-1 text-sm text-muted">{education.degree}</p>
               <p className="text-sm text-muted">{education.graduation}</p>
-
               <p className="mt-3 text-sm text-zinc-300">
                 Focus: {education.focus}
               </p>
@@ -38,7 +36,6 @@ export function About() {
                   <dt className="font-mono text-xs uppercase tracking-wider text-muted">
                     {group.label}
                   </dt>
-
                   <dd className="mt-2 flex flex-wrap gap-1.5">
                     {group.items.map((i) => (
                       <Tag key={i}>{i}</Tag>
@@ -50,26 +47,6 @@ export function About() {
           </div>
         </BlurFade>
       </div>
-      <BlurFade inView delay={0.1}>
-        <div className="mt-16">
-          <p className="font-mono text-xs uppercase tracking-wider text-accent">
-            Organizations
-          </p>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {about.organizations.map((org) => (
-              <li
-                key={org.name}
-                className="rounded-xl border border-border bg-zinc-900/40 px-4 py-4 transition-colors hover:border-white/15"
-              >
-                <p className="text-sm font-medium">{org.name}</p>
-                {"detail" in org && (
-                  <p className="mt-1 text-xs text-muted">{org.detail}</p>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </BlurFade>
     </Section>
   );
 }
